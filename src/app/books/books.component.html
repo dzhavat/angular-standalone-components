@@ -1,0 +1,9 @@
+<h2>Angular books</h2>
+
+<div class="books__container">
+  <div *ngFor="let book of books">
+    <h3>{{ book.title }}</h3>
+    <p>by: {{ book.author.join(", ") }}</p>
+    <p>{{ book.desciption }}</p>
+  </div>
+</div>
